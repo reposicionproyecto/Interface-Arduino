@@ -6,7 +6,7 @@
 
   #include <Adafruit_GFX.h> // Libreria para los graficos y actualización
 
-  #include <Adafruit_TFTLCD.h> // Libreria de LCD
+  #include <Adafruit_TFTLCD.h> // Instalacion y actualizacion de la Libreria de LCD
 
   #include <SD.h> // Libreria de tarjeta SD
 
