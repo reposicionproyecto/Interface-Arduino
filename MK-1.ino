@@ -28,7 +28,7 @@
 
 
 
-  #include <SoftwareSerial.h> // LIBRERIA PARA EL GSM
+  #include <SoftwareSerial.h> // INSTALACION DE LA LIBRERIA PARA EL GSM
 
   SoftwareSerial SIM900(22,23);
 
