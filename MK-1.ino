@@ -4,7 +4,7 @@
 
   #include <String.h>
 
-  #include <Adafruit_GFX.h> // Libreria para los graficos graficos actualización
+  #include <Adafruit_GFX.h> // Libreria para los graficos y actualización
 
   #include <Adafruit_TFTLCD.h> // Libreria de LCD
 
