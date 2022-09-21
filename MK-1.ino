@@ -10,7 +10,7 @@
 
   #include <SD.h> // Instalacion de la Libreria de tarjeta SD y actualizacion
 
-  #include <SPI.h>  // Libreria bus SPI
+  #include <SPI.h>  // Instalacion y Actualizacion de la Libreria bus SPI
 
 
 
