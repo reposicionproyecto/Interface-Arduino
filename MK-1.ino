@@ -16,7 +16,7 @@
 
   #include <avr/pgmspace.h>
 
-  #include <TouchScreen.h>  // Libreria del panel tactil
+  #include <TouchScreen.h>  // Instalacion y Actualizacion de la Libreria del panel tactil
 
   #include <EEPROM.h>
 
