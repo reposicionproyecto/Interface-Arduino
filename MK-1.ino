@@ -8,7 +8,7 @@
 
   #include <Adafruit_TFTLCD.h> // Instalacion y actualizacion de la Libreria de LCD
 
-  #include <SD.h> // Libreria de tarjeta SD
+  #include <SD.h> // Instalacion de la Libreria de tarjeta SD y actualizacion
 
   #include <SPI.h>  // Libreria bus SPI
 
