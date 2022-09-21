@@ -24,7 +24,7 @@
 
   #include <Wire.h>
 
-  #include <DS1307RTC.h> // a basic DS1307 library that returns time as a time_t
+  #include <DS1307RTC.h> // Instalacion del DS1307 libreria que retorna el tiempo en time_t
 
 
 
