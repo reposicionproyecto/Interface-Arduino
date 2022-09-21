@@ -20,7 +20,7 @@
 
   #include <EEPROM.h>
 
-  #include <Time.h> // librerias para manejar hora y fecha
+  #include <Time.h> // Instalacion y Actualizacion de las librerias para manejar hora y fecha
 
   #include <Wire.h>
 
