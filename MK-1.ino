@@ -165,11 +165,11 @@ EEN 0x07E0
 
 
 
-  ////>>>>> DEFINICION DE PINES PARA ULTRASÓNICO <<<<///
+  ////>>>>> DEFINICION DE PINES PARA ULTRASÓNICO PARA LA MEDICIÓN DE LA CANTIDAD DEL ALIMENTO <<<<///
 
-  #define trigPin 30
+  #define trigPin 30 // 30 ES EL PIN ORIGINAL
 
-  #define echoPin 31
+  #define echoPin 31 //31 ES EL PIN ORIGINAL
 
 
 
