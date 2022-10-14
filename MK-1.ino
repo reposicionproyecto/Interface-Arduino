@@ -95,9 +95,9 @@
 
   // Definimos la presion máxima y minima que podemos realizar sobre el panel
 
-  #define MINPRESSURE 1
+  #define MINPRESSURE 2 // 1 Valor original para el touch
 
-  #define MAXPRESSURE 1000
+  #define MAXPRESSURE 1900 // 1000 Valor original del touch
 
 
 
@@ -483,10 +483,10 @@ EEN 0x07E0
 
   {
 
-  ///<<< INGRESA EL PRECIO DE LAS COMIDAS 1/16, 3/32, 1/8, 1/4
+  ///<<< INGRESA LA CAMTIDAD DE LAS COMIDAS 1/16, 3/32, 1/8, 1/4
 >>>///
 
-    etiquetaTeclado(i_etiqueta);  /// HACE QUE SE IMPRIMAN LAS ETIQUETAS DE TAMAÑO COMIDA
+    etiquetaTeclado(i_etiqueta);  /// HACE QUE SE IMPRIMAN LAS ETIQUETAS DE TAMAÑO DEL ALIMENTO
   do
 
   {
@@ -971,5 +971,3 @@ tft.fillScreen(FONDO);//::: LIMPIA LA
   clearBoton(op_del); //:: BORRA LOS BOTONES
 
   }
-
-  //////////+++++ FIN DEL LOOP++++++/////
