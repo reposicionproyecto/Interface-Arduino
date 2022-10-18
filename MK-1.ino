@@ -27,6 +27,13 @@ void setup() {
 Serial.begin(9600);
 pinMode (pwmPin3, OUTPUT); 
 
+//Declaramos los pines para el ultrasonido
+pinMode(pEcho, INPUT);   //Defino echo como entrada
+  pinMode(pTrig, OUTPUT);  //Defino trigger como salida
+/////////declara los pines
+  pinMode(led,OUTPUT);
+  digitalWrite(led,LOW);
+
 servo3.attach(pwmPin3);
 
 }
