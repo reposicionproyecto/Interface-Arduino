@@ -1,6 +1,6 @@
 //SISTEMA DE ALIMENTACION CONTROLADO REMOTAMENTE PARA GRANJA PISCICULTURA DOSIFICACION Y CANTIDAD DE ALIMENTO
 
-  #include <Servo.h>
+#include <Servo.h>
 Servo servo3;
 
 const int pwmPin3 = 3; // Un servo en el pin 3
@@ -8,6 +8,11 @@ const int pwmPin3 = 3; // Un servo en el pin 3
 char val;
 String grados;
 int angulo;
+
+//Codigo para medir la cantidad del alimento en la tolva
+float rango;
+char dato_ultrasonido;
+int led=13;
 
 void setup() {
 Serial.begin(9600);
