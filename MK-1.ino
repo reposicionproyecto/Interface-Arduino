@@ -14,6 +14,15 @@ float rango;
 char dato_ultrasonido;
 int led=13;
 
+char enviar_dato;
+char buffer (10);
+//Variables para sensor de distancia
+#define pEcho 2  //Conecta pin echo
+#define pTrig 3  //Conecta el trigger
+int duracion;       //Captura el pulso que emite el echo
+int ultrasonico=0;      //Captura la distancia
+//int i=0;            //Variable para control del ciclo
+
 void setup() {
 Serial.begin(9600);
 pinMode (pwmPin3, OUTPUT); 
