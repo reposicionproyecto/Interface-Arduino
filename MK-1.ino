@@ -59,10 +59,10 @@ delayMicroseconds(5);
 digitalWrite(Trigger, HIGH);
 delayMicroseconds(10);
 digitalWrite(Trigger, LOW);
-tiempo=pulseIn(Echo, HIGH);
-distancia= tiempo /(29.2*2);
+tiempo=pulseIn(Echo, HIGH); //Medimos el tiempo entre pulsos en microsegundos
+distancia= tiempo /(29.2*2); //convertimos la distancia a cm ya que esta en microsegundos, sabiendo que la velocidad es de 343 m/s
 
-Serial.println (distancia);
+Serial.println (distancia); //Monitoreamos la distancia captada por el sensor y enviamos
 delay(250);
 
 } 
