@@ -3,38 +3,28 @@
 #include <Servo.h>
 Servo servo3;
 
+//para el ultrasonido
+int Echo= 9; //Declaramos el pin 5 como echo
+int Trigger= 8; //Declaramos el pin 6 como trigger
+
+double distancia;
+long tiempo;
+
 const int pwmPin3 = 3; // Un servo en el pin 3
 
 char val;
 String grados;
 int angulo;
 
-//Codigo para medir la cantidad del alimento en la tolva
-float rango;
-char dato_ultrasonido;
-int led=13;
-
-char enviar_dato;
-char buffer (10);
-//Variables para sensor de distancia
-#define pEcho 2  //Conecta pin echo
-#define pTrig 3  //Conecta el trigger
-int duracion;       //Captura el pulso que emite el echo
-int ultrasonico=0;      //Captura la distancia
-//int i=0;            //Variable para control del ciclo
-
 void setup() {
 Serial.begin(9600);
 pinMode (pwmPin3, OUTPUT); 
 
-//Declaramos los pines para el ultrasonido
-pinMode(pEcho, INPUT);   //Defino echo como entrada
-  pinMode(pTrig, OUTPUT);  //Defino trigger como salida
-/////////declara los pines
-  pinMode(led,OUTPUT);
-  digitalWrite(led,LOW);
-
 servo3.attach(pwmPin3);
+
+//para el ultrasonido
+pinMode(Trigger, OUTPUT);
+pinMode(Echo, INPUT);
 
 }
 
@@ -59,15 +49,20 @@ for(angulo = 180; angulo>=1; angulo-=1)
   delay(15);
 }
 
-
-
-
-
-
-
 grados = "";
 
 }
-} 
 
-} // => Fin Loop
+} 
+digitalWrite (Trigger, LOW);
+delayMicroseconds(5);
+digitalWrite(Trigger, HIGH);
+delayMicroseconds(10);
+digitalWrite(Trigger, LOW);
+tiempo=pulseIn(Echo, HIGH);
+distancia= tiempo /(29.2*2);
+
+Serial.println (distancia);
+delay(250);
+
+} 
